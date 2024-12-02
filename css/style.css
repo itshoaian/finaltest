@@ -1,0 +1,491 @@
+@charset "utf-8";
+/* CSS Document */
+*:before,
+*:after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'General Sans', sans-serif;
+	src: url("../fonts/General Sans/GeneralSans-Regular.ttf")
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+  	margin: 0;
+	overflow-x: hidden;
+}
+img {
+	padding-top: 8px;
+    max-width: 100%;
+    height: auto;
+}
+a {
+	text-decoration: none;
+}
+header {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: white;
+}
+.wrapper .button{
+	align-items: center;
+	display: inline-block;
+	margin: 10px 10px;
+	background: #fff;
+	border-radius: 30px;
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	transition: all 0.4s ease-out;
+	overflow: hidden;
+}
+.wrapper .button:hover {
+	width: 250px;
+}
+.wrapper .button:nth-child(1):hover {
+	height: 400px;
+	background: black;
+}
+.wrapper .button:nth-child(1):hover .fa fa-search fa-lg {
+	color: white;
+}
+.wrapper .button .icon{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	box-sizing: border-box;
+	line-height: 55px;
+	text-align: center;
+}
+.wrapper .button .icon .i {
+	font-size: 25px;
+	line-height: 60px;
+}
+img .video-container video {
+    max-width: 100%;
+    height: auto;
+}
+.container,
+.container2,
+.container3,
+.container4 {
+    max-width: 100%;
+    overflow: hidden; /* Ensure containers don't overflow */
+}
+.wrapper .button span {
+	line-height: 60px;
+	margin-left: 10px;
+	font-family: Arial;
+	font-weight: 900;
+	font-size: 25px;
+}
+input {
+	border: none;
+	background: #E0E0E0;
+	height: 20px;
+	border-radius: 50px;
+}
+h3 {
+	color: white;
+	font-family: Arial;
+}
+nav {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 200px;
+	line-height: 40px;
+	padding: 8px 25px;
+	z-index: 2000;
+}
+nav ul {
+	position: absolute;
+	list-style: none;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	z-index: 2000;
+}
+nav ul li {
+	line-height: 27px;
+	padding: 6px 40px;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: General Sans;
+	font-weight: 100;
+}
+nav ul ul {
+	position: static;
+}
+nav ul ul li {
+	line-height: 18px;
+	padding-left: 25px;
+}
+nav ul li a {
+    position: relative; 
+    display: inline-block;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    bottom: -5px;
+    left: 0; 
+    transform: scaleX(0);
+    transition: transform 0.4s ease; 
+}
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.wrapper .button nav {
+    visibility: hidden; 
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+
+.wrapper .button:hover nav {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+header {
+	z-index: 2000;
+}
+.pic-slide {
+	display: flex;
+	width: 100%;
+}
+.images {
+	width: 240px;
+	filter: brightness(90%);
+}
+.pics {
+	width: 240px;
+	height: 300px;
+	position: relative;
+}
+.pics img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.4s;
+}
+.pics:hover img {
+	transform: scale(1.025);
+}
+.text {
+	position: absolute;
+	top: 50%;
+	font-family: General Sans;
+	color: white;
+	font-weight: 600;
+	font-size: 27px;
+	text-align: center;
+	width: auto;
+}
+.video-container video {
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+}
+.container2 {
+	width: 100%;
+	background-color: black; 
+	height: 600px; 
+	margin-top: 12px;
+}
+.container3 {
+	width: 100%;
+	background-color: black;
+	height: 750px;
+}
+button{
+	height: 40px;
+	width: 150px;
+	font-family: General Sans;
+	font-weight: 550;
+	border-radius: 50px;
+	margin-top: 30px;
+	transition: 0.4s ease-in;
+}
+.button {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+
+}
+.button:hover {
+	background-color: white;
+	color: black;
+}
+.button1 {
+	background-color: black;
+	border: 2px solid white;
+
+}
+.button1:hover {
+	background-color: white;
+}
+.img2 {
+	transition: 0.4s ease-in;
+}
+.img2:hover {
+	width: 400px;
+}
+.pic-slide1 {
+	display: flex;
+	margin: 0 4px;
+	justify-content: space-around;
+}
+.images3 {
+	filter: brightness(70%);
+}
+.pics1 {
+	width: 370px;
+	height: 600px;
+	position: relative;
+}
+.pics1 img {
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	transition: transform 0.4s;
+}
+.pics1:hover img {
+	transform: scale(1.025);
+}
+.text2 {
+	color: white;
+	font-family: General Sans;
+	font-size: 70px;
+	font-weight: 400;
+	margin-left: 35px;
+	width: 700px;
+}
+.fa-angle-double-right {
+	-webkit-text-stroke: 6px black;
+}
+.button1 {
+	width: 55px;
+	height: 55px;
+	margin-left: 30px;
+}
+.text3 {
+	position: absolute;
+	bottom: 4%;
+	font-family: General Sans;
+	color: white;
+	font-weight: 600;
+	font-size: 35px;
+	text-align: center;
+	width: auto;
+	left: 12%;
+	transition: 0.3s;
+}
+.vid {
+	filter: brightness(70%);
+}
+.vid1 {
+    width: 370px; 
+    height: 599px; 
+    position: relative;
+    overflow: hidden;
+	padding-top: 8px;
+}
+.vid1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+.vid1:hover video {
+	transform: scale(1.025);
+}
+
+.button2 {
+	background-color: white;
+	color: 3px solid black;
+	width: 55px;
+	height: 55px;
+	margin-left: 30px;
+}
+.button2:hover {
+	background-color: black;
+	color: black;
+}
+.text4 {
+	color: black;
+	font-family: General Sans;
+	font-size: 70px;
+	font-weight: 400;
+	margin-left: 15px;
+	margin-top: 5px;
+	width: 700px;
+
+}
+.container4 {
+	width: 100%;
+	background-color: white;
+	height: auto;
+}
+.pic-slide4 {
+	display: flex;
+	margin-left: 10px;
+}
+.images4 {
+	width: 240px;
+}
+.pics4 {
+	width: 240px;
+	height: 300px;
+	position: relative;
+}
+.pics4 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.4s;
+}
+.pics4:hover img {
+	transform: scale(1.025);
+}
+.subtext {
+	font-family: General Sans;
+	font-size: 13px;
+	padding-top: 10px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+footer {
+	height: 300px;
+	width: 100%;
+	margin-top: 150px;
+	text-align: left;
+	left: 0;
+}
+h3 {
+	color: black;
+	font-family: General Sans;
+	font-weight: 600;
+}
+.abc {
+	margin-top: 10px;
+}
+.icons {
+	margin-top: 10px;
+	width: 500px;
+	display: flex;
+	gap: 13px;
+	margin-left: 70px;
+}
+.col-3 {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+.textt {
+	font-family: General Sans;
+	font-size: 100px;
+	color: white;
+	margin: 25px;
+	text-align: center;
+	font-weight: 400;
+	position: absolute;
+	bottom: -60%;
+	left: 25%;
+	width: auto;
+}
+select {
+	width: 200px;
+	font-family: General Sans;
+	border-radius: 50px;
+	padding-left: 15px;
+	height: 25px;
+	border: 1px solid rgba(216,216,216,1.00);
+}
+.video-container {
+	position: relative
+}
+.textt1 {
+	font-family: General Sans;
+	font-size: 17px;
+	font-weight: 400;
+	width: 425px;
+	margin-top: 30px;
+}
+.storeloc {
+	box-shadow: 0px 7px 8px rgba(0,0,0,0.1);
+	width: 620px;
+	height: 450px;
+	border-radius: 30px;
+	margin-top: 30px;
+	display: flex;
+	margin-left: 440px;
+}
+.map {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.textt3 {
+	font-family: General Sans;
+	font-size: 13px;
+	margin-top: 20px;
+}
+.textt4 {
+	font-family: General Sans;
+	font-size: 17px;
+	font-weight: 400;
+	margin-top: 70px;
+	margin-left: 290px;
+	width: 100%;
+}
+.textt5 {
+	font-family: General Sans;
+	font-size: 17px;
+	font-weight: 400;
+	margin-top: 70px;
+	margin-left: 290px;
+	width: 1000px;
+	height: 75px;
+}
+.information {
+	width: 100%;
+} 
+.shopping-bag-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    transition: background-color 0.75s;
+}
+
+.shopping-bag-button:hover {
+    background-color: white;
+    color: black;
+}
